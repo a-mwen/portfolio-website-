@@ -1,0 +1,78 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.social-icon img,
+.social-link {
+  transition: transform 0.5s, color 0.3s;
+}
+
+/* Cursor Styles */
+.cursor,
+.cursor-circle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.cursor {
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  transition: width 0.2s ease, height 0.2s ease;
+}
+
+.cursor-circle {
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  transition: transform 0.1s ease;
+}
+
+/* Hide default cursor */
+body {
+  cursor: none;
+  font-family: 'Merriweather', serif;
+}
+
+/* Typography class for special emphasis */
+.typography-font {
+  font-family: 'Merriweather', serif;
+}
+/* globals.css or equivalent CSS file */
+/* Shape Styles *//* Shape Styles */
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.2;
+    filter: blur(20px);
+  }
+  
+  .shape.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #ff6b6b;
+  }
+  
+  .shape.square {
+    width: 120px;
+    height: 120px;
+    background-color: #1dd1a1;
+    border-radius: 15%;
+  }
+  
+  .shape.triangle {
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 100px solid #ff9f43;
+    background-color: transparent;
+    border-radius: 0;
+  }
