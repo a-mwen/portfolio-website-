@@ -57,7 +57,7 @@ export default function About() {
           <p className="text-lg sm:text-xl mb-4">2021 - Present</p>
           <ul className="list-disc list-inside mb-4">
             <li className="mb-2">NCAA Division II Scholar</li>
-            <li className="mb-2">Contributed to the team's success in regional championships and playoffs during the 2022 and 2023 seasons</li>
+            <li className="mb-2">Contributed to the team&apos;s success in regional championships and playoffs during the 2022 and 2023 seasons</li>
             <li className="mb-2">Awarded as conference Scholar-Athlete in 2022</li>
             <li className="mb-2">Chi Alpha Sigma Member</li>
           </ul>
@@ -65,7 +65,7 @@ export default function About() {
           {/* Extracurricular Activities */}
           <h2 className="text-3xl font-bold text-green mb-4">Extracurricular Activities</h2>
           <ul className="list-disc list-inside mb-4">
-            <li className="mb-2">Member of the Dean's List consistently for outstanding academic performance</li>
+            <li className="mb-2">Member of the Dean&apos;s List consistently for outstanding academic performance</li>
             <li className="mb-2">Engaged in organizations like Rewrite the Code and ColorStack, promoting diversity and inclusion in the tech community</li>
           </ul>
         </div>
