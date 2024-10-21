@@ -29,44 +29,48 @@ export default function About() {
     <div className="bg-navy min-h-screen text-white relative overflow-hidden">
       <Header />
       <Cursor />
-      <main className="container mx-auto p-4 flex flex-col justify-center items-start min-h-screen pt-12 md:pt-16"> {/* Added padding top */}
+      <main className="container mx-auto p-4 flex flex-col justify-center items-start min-h-screen pt-12 md:pt-16">
         <div className="about-content relative z-10">
           <h1 className="text-4xl font-bold text-green mb-4">ABOUT</h1>
           <p className="text-lg sm:text-xl mb-4">
-            <span className="typography-font mb-8">A backend developer with a deep interest in <span className="text-red-500 font-bold">database management</span>, data structures, and efficient algorithms. 
-            I am a backend-focused software engineer with a Bachelor of Science degree in <span className="text-yellow-500 font-bold">Computer Science</span> from 
-            <span className="text-blue-500"> Point Park University</span>, expected graduation May 2025.</span>
+            <span className="typography-font mb-8">
+              I am a full-stack software developer and data analyst with a passion for building robust, scalable systems. With strong skills in <span className="text-yellow-500 font-bold">backend development</span> and <span className="text-purple-500 font-bold">data analysis</span>, I focus on creating efficient solutions and optimizing system performance. 
+              I am currently pursuing my <span className="text-blue-500 font-bold">Bachelor of Science in Computer Science</span> at <span className="text-blue-500">Point Park University</span>, graduating in May 2025.
+            </span>
           </p>
-          <p className="text-lg sm:text-xl mb-4">Throughout my career, I have worked on various projects and held positions that have strengthened my skills in database design, management, and backend development.</p>
-          <p className="text-lg sm:text-xl mb-4">Currently, I am a Computer Science Tutor at Point Park University, where I guide students in understanding fundamental concepts of computer science, including programming languages, data structures, and algorithms. Additionally, I assist students and faculty as a Library Associate, providing support with library resources and research.</p>
-          <p className="text-lg sm:text-xl mb-4">On a daily basis, I work with:</p>
+          <p className="text-lg sm:text-xl mb-4">
+            In my career, I’ve worked on a variety of projects that have deepened my expertise in backend technologies, database design, and full-stack application development.
+          </p>
+          <p className="text-lg sm:text-xl mb-4">Currently, I’m a Computer Science Tutor and a Library Associate at Point Park University, guiding students in mastering key concepts like data structures, algorithms, and backend development.</p>
+          <p className="text-lg sm:text-xl mb-4">Technologies I work with on a daily basis include:</p>
           <ul className="text-lg sm:text-xl mb-4 flex flex-wrap gap-4">
-            <li className="technology text-red-500 bg-gray-800 p-2 rounded-xl">HTML</li>
-            <li className="technology text-blue-500 bg-gray-800 p-2 rounded-xl">CSS</li>
+            <li className="technology text-green-500 bg-gray-800 p-2 rounded-xl">HTML</li>
+            <li className="technology text-purple-500 bg-gray-800 p-2 rounded-xl">CSS</li>
             <li className="technology text-yellow-500 bg-gray-800 p-2 rounded-xl">JavaScript</li>
-            <li className="technology text-pink-500 bg-gray-800 p-2 rounded-xl">ReactJS</li>
-            <li className="technology text-green-500 bg-gray-800 p-2 rounded-xl">SQL (PostgreSQL, MySQL, MongoDB)</li>
+            <li className="technology text-blue-500 bg-gray-800 p-2 rounded-xl">ReactJS</li>
+            <li className="technology text-red-500 bg-gray-800 p-2 rounded-xl">SQL (PostgreSQL, MySQL, MongoDB)</li>
             <li className="technology text-gray-300 bg-gray-800 p-2 rounded-xl">Next.js</li>
             <li className="technology text-gray-300 bg-gray-800 p-2 rounded-xl">Node.js</li>
+            <li className="technology text-blue-400 bg-gray-800 p-2 rounded-xl">Python</li> {/* Added Python with blue styling */}
           </ul>
-          <p className="text-lg sm:text-xl mb-4">In my recent project with Sunfresh Food Services, I spearheaded the design and development of a robust backend system, enhancing their inventory and order management system with efficient database queries and APIs.</p>
-          <p className="text-lg sm:text-xl mb-4">I am passionate about building scalable and efficient backend systems, and I am always eager to learn and grow in a fast-paced and challenging environment.</p>
-          
+          <p className="text-lg sm:text-xl mb-4">In my most recent project with Sunfresh Food Services, I led the backend development of an inventory management system, optimizing database queries and building scalable APIs.</p>
+          <p className="text-lg sm:text-xl mb-4">I’m dedicated to continuous learning, growth, and delivering high-quality solutions in both full-stack development and data analysis.</p>
+
           {/* Athletic Achievements */}
           <h2 className="text-3xl font-bold text-green mb-4">Athletic Achievements</h2>
-          <p className="text-lg sm:text-xl mb-4">2021 - Present</p>
-          <ul className="list-disc list-inside mb-4">
+          <p className="text-lg sm:text-xl mb-4">Point Park Women's Soccer - 2021 to Present</p>
+          <ul className="list-disc list-inside mb-4 text-lg sm:text-xl"> {/* Ensured the font size is consistent */}
             <li className="mb-2">NCAA Division II Scholar</li>
-            <li className="mb-2">Contributed to the team&apos;s success in regional championships and playoffs during the 2022 and 2023 seasons</li>
-            <li className="mb-2">Awarded as conference Scholar-Athlete in 2022</li>
+            <li className="mb-2">Contributed to the team's success in regional championships and playoffs during the 2022 and 2023 seasons</li>
+            <li className="mb-2">Awarded conference Scholar-Athlete in 2022</li>
             <li className="mb-2">Chi Alpha Sigma Member</li>
           </ul>
 
           {/* Extracurricular Activities */}
           <h2 className="text-3xl font-bold text-green mb-4">Extracurricular Activities</h2>
-          <ul className="list-disc list-inside mb-4">
-            <li className="mb-2">Member of the Dean&apos;s List consistently for outstanding academic performance</li>
-            <li className="mb-2">Engaged in organizations like Rewrite the Code and ColorStack, promoting diversity and inclusion in the tech community</li>
+          <ul className="list-disc list-inside mb-4 text-lg sm:text-xl"> {/* Font size aligned */}
+            <li className="mb-2">Consistent member of the Dean’s List for academic excellence</li>
+            <li className="mb-2">Active in organizations such as Rewrite the Code and ColorStack, promoting diversity in tech</li>
           </ul>
         </div>
         {/* Animated Shapes */}

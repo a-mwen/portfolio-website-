@@ -16,6 +16,9 @@ module.exports = {
         white: '#e6f1ff',
         green: '#64ffda',
       },
+      fontFamily: {
+        sans: ['Simpliciter Sans', 'sans-serif'], // Add Simpliciter Sans
+      },
     },
   },
   plugins: [],

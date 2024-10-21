@@ -38,12 +38,12 @@
 /* Hide default cursor */
 body {
   cursor: none;
-  font-family: 'Merriweather', serif;
+  font-family: 'Simpliciter Sans Regular';
 }
 
 /* Typography class for special emphasis */
 .typography-font {
-  font-family: 'Merriweather', serif;
+  font-family: 'Simpliciter Sans Regular';
 }
 /* globals.css or equivalent CSS file */
 /* Shape Styles *//* Shape Styles */

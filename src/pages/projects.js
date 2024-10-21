@@ -6,8 +6,16 @@ import { marked } from 'marked';
 
 const categories = {
   "Web Development": [
-    { title: "Portfolio Website", description: "Build a personal website to showcase your skills and projects.", image: "/path/to/portfolio.jpg", github: "#", tech: "HTML, CSS, JavaScript, React" },
-    { title: "E-Commerce Site - COMING SOON", description: "Create an online store with product listings and a shopping cart.", image: "/path/to/ecommerce.jpg", github: "#", tech: "JavaScript, Node.js, MongoDB" }
+    { title: "Portfolio Website", description: "Build a personal website to showcase your skills and projects.", image: "/images/portfolio.png", github: "#", tech: "HTML, CSS, JavaScript, React" },
+    { 
+      title: "Interactive 3D Globe", 
+      description: "A WebGL-based interactive globe showing various global data points in real-time.", 
+      image: "https://static.turbosquid.com/Preview/2015/09/01__08_03_12/8k.jpgcc32babc-700f-4e83-a4c7-34c6ccb97a9fOriginal.jpg", 
+      github: "https://github.com/a-mwen/interactive-globe-project", 
+      tech: "JavaScript, WebGL, Three.js", 
+      liveDemo: "https://interactive-globe-project-2j6lozqyy-ashers-projects-2cc47492.vercel.app/" 
+    }
+    
   ],
   "Databases": [
     { 
