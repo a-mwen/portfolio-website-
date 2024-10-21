@@ -58,10 +58,10 @@ export default function About() {
 
           {/* Athletic Achievements */}
           <h2 className="text-3xl font-bold text-green mb-4">Athletic Achievements</h2>
-          <p className="text-lg sm:text-xl mb-4">Point Park Women's Soccer - 2021 to Present</p>
+          <p className="text-lg sm:text-xl mb-4">Point Park Women&apos;s Soccer - 2021 to Present</p>
           <ul className="list-disc list-inside mb-4 text-lg sm:text-xl"> {/* Ensured the font size is consistent */}
             <li className="mb-2">NCAA Division II Scholar</li>
-            <li className="mb-2">Contributed to the team's success in regional championships and playoffs during the 2022 and 2023 seasons</li>
+            <li className="mb-2">Contributed to the team&apos;s success in regional championships and playoffs during the 2022 and 2023 seasons</li>
             <li className="mb-2">Awarded conference Scholar-Athlete in 2022</li>
             <li className="mb-2">Chi Alpha Sigma Member</li>
           </ul>

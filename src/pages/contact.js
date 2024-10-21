@@ -20,7 +20,7 @@ export default function Contact() {
         <div className="mb-8 mt-8 w-full">
           <h1 className="text-4xl font-bold text-green mb-8">Get in Touch</h1>
           <p className="text-xl sm:text-2xl font-medium mb-4">
-            I'm always open to discussing new opportunities, collaborations, or simply connecting. If you'd like to reach out, feel free to contact me at:
+            I&apos;m always open to discussing new opportunities, collaborations, or simply connecting. If you&apos;d like to reach out, feel free to contact me at:
           </p>
           
           <p className="text-xl sm:text-2xl mb-4 text-blue-500 font-semibold">

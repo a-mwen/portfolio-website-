@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import Header from '../components/Header';
 import Cursor from '../components/cursor';
+import Image from 'next/image'; // Importing the Image component
 
 export default function Home() {
   useEffect(() => {
@@ -56,24 +57,26 @@ export default function Home() {
         <main className="container mx-auto p-4 flex flex-col items-center justify-center min-h-screen">
           <div className="flex items-center justify-center text-center">
             {/* Image Section */}
-            <img
-              src="/images/professional pic.jpg" // Corrected image path
+            <Image
+              src="/images/professional pic.jpg" // Ensure the path is correct
               alt="Asha Mweene"
-              className="rounded-full w-56 h-56 object-cover ml-6" // Increased image size
+              className="rounded-full w-56 h-56 object-cover ml-6" // Adjust className as needed
+              width={224} // Specify width
+              height={224} // Specify height
             />
 
             <div className="intro text-center ml-6"> {/* Add margin to separate from image */}
-              <h1 className="text-2xl font-bold text-green mb-2">Hello, I'm</h1> {/* Smaller font size for intro */}
-              <h1 className="text-6xl font-bold mt-2 mb-4">Asha Mweene</h1> {/* Larger font for your name */}
-              <p className="text-lg text-light-slate mb-4"> {/* Slightly smaller font for profession */}
+              <h1 className="text-2xl font-bold text-green mb-2">Hello, I&apos;m</h1> {/* Escape single quote */}
+              <h1 className="text-6xl font-bold mt-2 mb-4">Asha Mweene</h1>
+              <p className="text-lg text-light-slate mb-4">
                 Software Engineer and Data Analyst
               </p>
               <div className="flex justify-center space-x-4"> {/* Align icons horizontally */}
                 <a href="https://www.linkedin.com/in/ashamweene" className="social-icon">
-                  <img src="https://brintonvision.com/wp-content/uploads/2016/05/linkedin-black.png" alt="LinkedIn" className="w-8 h-8"/>
+                  <Image src="https://brintonvision.com/wp-content/uploads/2016/05/linkedin-black.png" alt="LinkedIn" width={32} height={32} />
                 </a>
                 <a href="https://github.com/a-mwen" className="social-icon">
-                  <img src="https://pngimg.com/uploads/github/github_PNG40.png" alt="GitHub" className="w-8 h-8"/>
+                  <Image src="https://pngimg.com/uploads/github/github_PNG40.png" alt="GitHub" width={32} height={32} />
                 </a>
               </div>
             </div>
