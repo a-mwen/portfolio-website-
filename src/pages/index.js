@@ -55,19 +55,19 @@ export default function Home() {
       <div className="bg-navy min-h-screen text-white flex flex-col items-center justify-center relative">
         <Cursor />
         <main className="container mx-auto p-4 flex flex-col items-center justify-center min-h-screen">
-          <div className="flex items-center justify-center text-center">
+          <div className="flex flex-col md:flex-row items-center justify-center text-center">
             {/* Image Section */}
             <Image
               src="/images/professional pic.jpg" // Ensure the path is correct
               alt="Asha Mweene"
-              className="rounded-full w-56 h-56 object-cover ml-6" // Adjust className as needed
+              className="rounded-full w-32 h-32 sm:w-56 sm:h-56 object-cover ml-6 mb-4 sm:mb-0" // Adjust className for responsiveness
               width={224} // Specify width
               height={224} // Specify height
             />
 
             <div className="intro text-center ml-6"> {/* Add margin to separate from image */}
               <h1 className="text-2xl font-bold text-green mb-2">Hello, I&apos;m</h1> {/* Escape single quote */}
-              <h1 className="text-6xl font-bold mt-2 mb-4">Asha Mweene</h1>
+              <h1 className="text-4xl sm:text-6xl font-bold mt-2 mb-4">Asha Mweene</h1>
               <p className="text-lg text-light-slate mb-4">
                 Software Engineer and Data Analyst
               </p>
