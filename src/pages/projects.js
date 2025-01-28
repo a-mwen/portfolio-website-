@@ -6,6 +6,14 @@ import { marked } from 'marked';
 
 const categories = {
   "Web Development": [
+    { 
+      title: "Event Tracker", 
+      description: "A web application that allows users to create, manage, and track events. Features include user authentication, event creation, and RSVP functionality.", 
+      image: "https://example.com/event-tracker-image.jpg", // Replace with an actual image URL
+      github: "https://github.com/a-mwen/EventTracker-project", 
+      tech: "HTML, CSS, JavaScript, React", 
+      liveDemo: "https://event-tracker-demo-url.com" // Replace with the actual live demo URL if available
+    },
     { title: "Portfolio Website", description: "A personal portfolio website designed to showcase skills, projects, and accomplishments. Fully responsive and optimized for both desktop and mobile views.", image: "/images/portfolio.png", github: "#", tech: "HTML, CSS, JavaScript, React" },
     { 
       title: "Interactive 3D Globe", 
@@ -16,6 +24,9 @@ const categories = {
       liveDemo: "https://interactive-globe-project-2j6lozqyy-ashers-projects-2cc47492.vercel.app/" 
     }
     
+  ],  "Machine Learning": [
+    { title: "Image Classification", description: "A machine learning model that classifies images into different categories using Convolutional Neural Networks (CNN) for accuracy.", image: "https://media.geeksforgeeks.org/wp-content/uploads/20230215093923/CNN-Architectures-1.png", github: "https://github.com/a-mwen/-image-classification", tech: "Python, TensorFlow, Keras", snippet: `# Load dataset\nimport numpy as np\nfrom tensorflow.keras.datasets import cifar10\nfrom tensorflow.keras.utils import to_categorical\n\n(X_train, y_train), (X_test, y_test) = cifar10.load_data()\n\n# Normalize data\nX_train = X_train.astype('float32') / 255.0\nX_test = X_test.astype('float32') / 255.0\n\n# One-hot encode labels\ny_train = to_categorical(y_train, 10)\ny_test = to_categorical(y_test, 10)\n\n# Build model\nmodel = Sequential([\n  Conv2D(32, (3, 3), activation='relu', input_shape=(32, 32, 3)),\n  MaxPooling2D((2, 2)),\n  Conv2D(64, (3, 3), activation='relu'),\n  MaxPooling2D((2, 2)),\n  Conv2D(128, (3, 3), activation='relu'),\n  MaxPooling2D((2, 2)),\n  Flatten(),\n  Dense(128, activation='relu'),\n  Dropout(0.5),\n  Dense(10, activation='softmax')\n])\nmodel.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])` },
+    { title: "Recommendation System - COMING SOON", description: "A machine learning-powered recommendation engine that suggests products or content based on user behavior and preferences.", image: "/path/to/recommendation.jpg", github: "#", tech: "Python, Scikit-Learn" }
   ],
   "Databases": [
     { 
@@ -67,10 +78,6 @@ app.listen(3000, () => {
 `,
     },
     { title: "Inventory Management - COMING SOON", description: "A robust system to monitor and manage inventory levels, orders, and stock control for businesses.", image: "/path/to/inventory.jpg", github: "#", tech: "MySQL, Express, Node.js" }
-  ],
-  "Machine Learning": [
-    { title: "Image Classification", description: "A machine learning model that classifies images into different categories using Convolutional Neural Networks (CNN) for accuracy.", image: "https://media.geeksforgeeks.org/wp-content/uploads/20230215093923/CNN-Architectures-1.png", github: "https://github.com/a-mwen/-image-classification", tech: "Python, TensorFlow, Keras", snippet: `# Load dataset\nimport numpy as np\nfrom tensorflow.keras.datasets import cifar10\nfrom tensorflow.keras.utils import to_categorical\n\n(X_train, y_train), (X_test, y_test) = cifar10.load_data()\n\n# Normalize data\nX_train = X_train.astype('float32') / 255.0\nX_test = X_test.astype('float32') / 255.0\n\n# One-hot encode labels\ny_train = to_categorical(y_train, 10)\ny_test = to_categorical(y_test, 10)\n\n# Build model\nmodel = Sequential([\n  Conv2D(32, (3, 3), activation='relu', input_shape=(32, 32, 3)),\n  MaxPooling2D((2, 2)),\n  Conv2D(64, (3, 3), activation='relu'),\n  MaxPooling2D((2, 2)),\n  Conv2D(128, (3, 3), activation='relu'),\n  MaxPooling2D((2, 2)),\n  Flatten(),\n  Dense(128, activation='relu'),\n  Dropout(0.5),\n  Dense(10, activation='softmax')\n])\nmodel.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])` },
-    { title: "Recommendation System - COMING SOON", description: "A machine learning-powered recommendation engine that suggests products or content based on user behavior and preferences.", image: "/path/to/recommendation.jpg", github: "#", tech: "Python, Scikit-Learn" }
   ],
   "Mobile Development": [
     { title: "Fitness Tracker App System - COMING SOON", description: "A mobile app to track daily workouts, fitness goals, and progress over time with analytics and motivational reminders.", image: "/path/to/fitness.jpg", github: "#", tech: "Swift, Firebase" },
