@@ -9,12 +9,13 @@ const categories = {
     { 
       title: "Event Tracker", 
       description: "A web application that allows users to create, manage, and track events. Features include user authentication, event creation, and RSVP functionality.", 
-      image: "https://example.com/event-tracker-image.jpg", // Replace with an actual image URL
+      image: "/images/eventTracker.png", // Replace with an actual image URL
       github: "https://github.com/a-mwen/EventTracker-project", 
       tech: "HTML, CSS, JavaScript, React", 
       liveDemo: "https://event-tracker-demo-url.com" // Replace with the actual live demo URL if available
     },
-    { title: "Portfolio Website", description: "A personal portfolio website designed to showcase skills, projects, and accomplishments. Fully responsive and optimized for both desktop and mobile views.", image: "/images/portfolio.png", github: "#", tech: "HTML, CSS, JavaScript, React" },
+    { title: "Portfolio Website", description: "A personal portfolio website designed to showcase skills, projects, and accomplishments. Fully responsive and optimized for both desktop and mobile views.", 
+      image: "/images/portfolio.png", github: "#", tech: "HTML, CSS, JavaScript, React" },
     { 
       title: "Interactive 3D Globe", 
       description: "A WebGL-based interactive globe showing various global data points in real-time.", 
