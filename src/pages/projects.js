@@ -11,8 +11,7 @@ const categories = {
       description: "A web application that allows users to create, manage, and track events. Features include user authentication, event creation, and RSVP functionality.", 
       image: "/images/eventTracker.png", // Replace with an actual image URL
       github: "https://github.com/a-mwen/EventTracker-project", 
-      tech: "PHP, CSS, JavaScript, Hack", 
-      liveDemo: "https://event-tracker-demo-url.com" 
+      tech: "PHP, CSS, JavaScript, Hack"
     },
     { title: "Portfolio Website", description: "A personal portfolio website designed to showcase skills, projects, and accomplishments. Fully responsive and optimized for both desktop and mobile views.", 
       image: "/images/portfolio.png", github: "#", tech: "HTML, CSS, JavaScript, React" },
