@@ -141,8 +141,7 @@ export default function Projects() {
                 {categories[category].map((project, index) => (
                   <div
                     key={index}
-                    className="project-card bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-all duration-300 cursor-pointer shadow-lg w-full sm:w-1/2 flex-shrink-0"
-                    onClick={() => handleProjectClick(project)}
+                    className="project-card bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-all duration-300 cursor-pointer shadow-lg w-full sm:w-1/2 md:w-1/3 lg:w-1/3 flex-shrink-0"                    onClick={() => handleProjectClick(project)}
                   >
                     <img src={project.image} alt={project.title} className="w-full h-32 object-cover rounded-md mb-4" />
                     <h3 className="text-2xl font-bold mb-1">{project.title}</h3>
