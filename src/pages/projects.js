@@ -135,23 +135,25 @@ export default function Projects() {
           <h1 className="text-center text-4xl font-bold text-green mb-12">PROJECTS</h1>
 
           {Object.keys(categories).map((category) => (
-            <div key={category} className="mb-16 text-center">
+            // Your adjusted component
+          <div key={category} className="mb-16 text-center">
               <h2 className="category-title text-3xl font-bold text-light-slate mb-6">{category}</h2>
-              <div className="flex flex-wrap justify-center gap-6">
-                {categories[category].map((project, index) => (
-                  <div
-                    key={index}
-                    className="project-card bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-all duration-300 cursor-pointer shadow-lg w-full sm:w-1/2 flex-shrink-0"
-                    onClick={() => handleProjectClick(project)}
-                  >
-                    <img src={project.image} alt={project.title} className="w-full h-32 object-cover rounded-md mb-4" />
-                    <h3 className="text-2xl font-bold mb-1">{project.title}</h3>
-                    <p className="text-sm text-gray-400 mb-2">{project.tech}</p>
-                    <p className="text-lg">{project.description}</p>
-                  </div>
-                ))}
+              <div className="project-container">
+                  {categories[category].map((project, index) => (
+                      <div
+                          key={index}
+                          className="project-card"
+                          onClick={() => handleProjectClick(project)}
+                      >
+                          <img src={project.image} alt={project.title} className="w-full h-32 object-cover rounded-md mb-4" />
+                          <h3 className="text-2xl font-bold mb-1">{project.title}</h3>
+                          <p className="text-sm text-gray-400 mb-2">{project.tech}</p>
+                          <p className="text-lg">{project.description}</p>
+                      </div>
+                  ))}
               </div>
-            </div>
+          </div>
+
           ))}
         </div>
 
