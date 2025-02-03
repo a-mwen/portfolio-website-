@@ -22,6 +22,14 @@ const categories = {
       github: "https://github.com/a-mwen/interactive-globe-project", 
       tech: "JavaScript, WebGL, Three.js", 
       liveDemo: "https://interactive-globe-project-2j6lozqyy-ashers-projects-2cc47492.vercel.app/" 
+    },
+    { 
+      title: "Azure AD B2C Authentication App", 
+      description: "This project demonstrates secure authentication using Azure AD B2C, a cloud-based identity management service from Microsoft. Built with React.js and Node.js, the app enables users to sign in and register via a Microsoft account with OAuth 2.0 authentication. The project showcases frontend and backend integration, user profile management, and the implementation of secure authentication flows. It highlights skills in Web Development, Full Stack Development, API Integration, and Cloud Authentication.", 
+      image: "/images/azure-ad-b2c.png", 
+      github: "https://github.com/a-mwen/azure-auth-repo", 
+      tech: "React, Azure AD B2C, MSAL.js, CSS",
+      liveDemo: "https://azure-auth-repo.vercel.app/" 
     }
     
   ],  "Machine Learning": [
