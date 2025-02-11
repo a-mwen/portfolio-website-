@@ -69,7 +69,7 @@ export default function Home() {
               <h1 className="text-2xl font-bold text-green mb-2">Hello, I&apos;m</h1> {/* Escape single quote */}
               <h1 className="text-4xl sm:text-6xl font-bold mt-2 mb-4">Asha Mweene</h1>
               <p className="text-lg text-light-slate mb-4">
-                Software Engineer and Data Analyst
+                Full-Stack Software Engineer and Data Analyst
               </p>
               <div className="flex justify-center space-x-4"> {/* Align icons horizontally */}
                 <a href="https://www.linkedin.com/in/ashamweene" className="social-icon">
