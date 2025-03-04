@@ -101,7 +101,7 @@ const categories = {
       tech: "C#, Unity" 
     },
     { 
-      title: "Calculator App", 
+      title: " Simple Calculator App", 
       description: "A simple web-based calculator that allows users to perform basic arithmetic operations with a clean and responsive UI.", 
       image: "/images/calculator.png", 
       github: "https://github.com/a-mwen/calculator-app", 
