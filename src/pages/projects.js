@@ -9,12 +9,17 @@ const categories = {
     { 
       title: "Event Tracker", 
       description: "A web application that allows users to create, manage, and track events. Features include user authentication, event creation, and RSVP functionality.", 
-      image: "/images/eventTracker.png", // Replace with an actual image URL
+      image: "/images/eventTracker.png",
       github: "https://github.com/a-mwen/EventTracker-project", 
       tech: "PHP, CSS, JavaScript, Hack"
     },
-    { title: "Portfolio Website", description: "A personal portfolio website designed to showcase skills, projects, and accomplishments. Fully responsive and optimized for both desktop and mobile views.", 
-      image: "/images/portfolio.png", github: "#", tech: "HTML, CSS, JavaScript, React" },
+    { 
+      title: "Portfolio Website", 
+      description: "A personal portfolio website designed to showcase skills, projects, and accomplishments. Fully responsive and optimized for both desktop and mobile views.", 
+      image: "/images/portfolio.png", 
+      github: "#", 
+      tech: "HTML, CSS, JavaScript, React" 
+    },
     { 
       title: "Interactive 3D Globe", 
       description: "A WebGL-based interactive globe showing various global data points in real-time.", 
@@ -25,16 +30,28 @@ const categories = {
     },
     { 
       title: "Azure AD B2C Authentication App", 
-      description: "This project demonstrates secure authentication using Azure AD B2C, a cloud-based identity management service from Microsoft. Built with React.js and Node.js, the app enables users to sign in and register via a Microsoft account with OAuth 2.0 authentication. The project showcases frontend and backend integration, user profile management, and the implementation of secure authentication flows. It highlights skills in Web Development, Full Stack Development, API Integration, and Cloud Authentication.", 
+      description: "This project demonstrates secure authentication using Azure AD B2C, a cloud-based identity management service from Microsoft. Built with React.js and Node.js, the app enables users to sign in and register via a Microsoft account with OAuth 2.0 authentication. The project showcases frontend and backend integration, user profile management, and the implementation of secure authentication flows.", 
       image: "/images/azure-ad-b2c.png", 
       github: "https://github.com/a-mwen/azure-auth-repo", 
       tech: "React, Azure AD B2C, MSAL.js, CSS",
       liveDemo: "https://azure-auth-repo.vercel.app/" 
     }
-    
-  ],  "Machine Learning": [
-    { title: "Image Classification", description: "A machine learning model that classifies images into different categories using Convolutional Neural Networks (CNN) for accuracy.", image: "https://media.geeksforgeeks.org/wp-content/uploads/20230215093923/CNN-Architectures-1.png", github: "https://github.com/a-mwen/-image-classification", tech: "Python, TensorFlow, Keras", snippet: `# Load dataset\nimport numpy as np\nfrom tensorflow.keras.datasets import cifar10\nfrom tensorflow.keras.utils import to_categorical\n\n(X_train, y_train), (X_test, y_test) = cifar10.load_data()\n\n# Normalize data\nX_train = X_train.astype('float32') / 255.0\nX_test = X_test.astype('float32') / 255.0\n\n# One-hot encode labels\ny_train = to_categorical(y_train, 10)\ny_test = to_categorical(y_test, 10)\n\n# Build model\nmodel = Sequential([\n  Conv2D(32, (3, 3), activation='relu', input_shape=(32, 32, 3)),\n  MaxPooling2D((2, 2)),\n  Conv2D(64, (3, 3), activation='relu'),\n  MaxPooling2D((2, 2)),\n  Conv2D(128, (3, 3), activation='relu'),\n  MaxPooling2D((2, 2)),\n  Flatten(),\n  Dense(128, activation='relu'),\n  Dropout(0.5),\n  Dense(10, activation='softmax')\n])\nmodel.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])` },
-    { title: "Recommendation System - COMING SOON", description: "A machine learning-powered recommendation engine that suggests products or content based on user behavior and preferences.", image: "/path/to/recommendation.jpg", github: "#", tech: "Python, Scikit-Learn" }
+  ],
+  "Machine Learning": [
+    { 
+      title: "Image Classification", 
+      description: "A machine learning model that classifies images into different categories using Convolutional Neural Networks (CNN) for accuracy.", 
+      image: "https://media.geeksforgeeks.org/wp-content/uploads/20230215093923/CNN-Architectures-1.png", 
+      github: "https://github.com/a-mwen/-image-classification", 
+      tech: "Python, TensorFlow, Keras"
+    },
+    { 
+      title: "Recommendation System - COMING SOON", 
+      description: "A machine learning-powered recommendation engine that suggests products or content based on user behavior and preferences.", 
+      image: "/path/to/recommendation.jpg", 
+      github: "#", 
+      tech: "Python, Scikit-Learn" 
+    }
   ],
   "Databases": [
     { 
@@ -42,60 +59,64 @@ const categories = {
       description: "A comprehensive library management system that catalogs books, manages user accounts, and tracks book loans and returns, all built on a MySQL database", 
       image: "/images/database.png", 
       github: "https://github.com/a-mwen/Library-management-database/tree/master",
-      tech: "SQL, Node.js, Express",
-      detailedDescription: `
-### Features
-- **Catalog and manage library resources**
-- **User management**
-- **Loan tracking**
-
-### Code Snippet
-**Main route in Express.js**:
-\`\`\`javascript
-const express = require('express');
-const bodyParser = require('body-parser');
-const mysql = require('mysql2');
-const app = express();
-
-app.use(bodyParser.json());
-
-const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'password',
-    database: 'library_db'
-});
-
-db.connect((err) => {
-    if (err) throw err;
-    console.log('Connected to database');
-});
-
-app.get('/books', (req, res) => {
-    const sql = 'SELECT * FROM books';
-    db.query(sql, (err, results) => {
-        if (err) throw err;
-        res.json(results);
-    });
-});
-
-app.listen(3000, () => {
-    console.log('Server running on port 3000');
-});
-\`\`\`
-`,
+      tech: "SQL, Node.js, Express"
     },
-    { title: "Inventory Management - COMING SOON", description: "A robust system to monitor and manage inventory levels, orders, and stock control for businesses.", image: "/path/to/inventory.jpg", github: "#", tech: "MySQL, Express, Node.js" }
+    { 
+      title: "Inventory Management - COMING SOON", 
+      description: "A robust system to monitor and manage inventory levels, orders, and stock control for businesses.", 
+      image: "/path/to/inventory.jpg", 
+      github: "#", 
+      tech: "MySQL, Express, Node.js" 
+    }
   ],
   "Mobile Development": [
-    { title: "Fitness Tracker App System - COMING SOON", description: "A mobile app to track daily workouts, fitness goals, and progress over time with analytics and motivational reminders.", image: "/path/to/fitness.jpg", github: "#", tech: "Swift, Firebase" },
-    { title: "Task Management App System - COMING SOON", description: "A React Native-based task management app that helps users organize and prioritize their daily tasks with notifications and a sleek UI.", image: "/path/to/task.jpg", github: "#", tech: "React Native, Redux" }
+    { 
+      title: "Fitness Tracker App System - COMING SOON", 
+      description: "A mobile app to track daily workouts, fitness goals, and progress over time with analytics and motivational reminders.", 
+      image: "/path/to/fitness.jpg", 
+      github: "#", 
+      tech: "Swift, Firebase" 
+    },
+    { 
+      title: "Task Management App System - COMING SOON", 
+      description: "A React Native-based task management app that helps users organize and prioritize their daily tasks with notifications and a sleek UI.", 
+      image: "/path/to/task.jpg", 
+      github: "#", 
+      tech: "React Native, Redux" 
+    }
   ],
   "Other": [
-    { title: "Job Board Application - COMING SOON", description: "A platform where employers can post job openings, and job seekers can search for and apply to positions", image: "/path/to/electronics.jpg", github: "#", tech: "PHP, PostgreSQL, jQuery, Bootstrap" },
-    { title: "Game Development- COMING SOON", description: "Create a simple game using Unity or Unreal Engine.", image: "/path/to/game.jpg", github: "#", tech: "C#, Unity" }
+    { 
+      title: "Job Board Application - COMING SOON", 
+      description: "A platform where employers can post job openings, and job seekers can search for and apply to positions.", 
+      image: "/path/to/electronics.jpg", 
+      github: "#", 
+      tech: "PHP, PostgreSQL, jQuery, Bootstrap" 
+    },
+    { 
+      title: "Game Development - COMING SOON", 
+      description: "Create a simple game using Unity or Unreal Engine.", 
+      image: "/path/to/game.jpg", 
+      github: "#", 
+      tech: "C#, Unity" 
+    },
+    { 
+      title: "Calculator App", 
+      description: "A simple web-based calculator that allows users to perform basic arithmetic operations with a clean and responsive UI.", 
+      image: "/images/calculator.png", 
+      github: "https://github.com/a-mwen/calculator-app", 
+      tech: "HTML, CSS, JavaScript" 
+    },
+    { 
+      title: "Weather App", 
+      description: "A weather application that fetches real-time weather data based on user input and displays temperature, humidity, and conditions.", 
+      image: "/images/weather-app.png", 
+      github: "https://github.com/a-mwen/weather-app", 
+      tech: "JavaScript, OpenWeather API, HTML, CSS" 
+    }
   ]
 };
+
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
