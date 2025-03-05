@@ -16,8 +16,10 @@ const projects = [
     title: "Portfolio Website", 
     description: "A personal portfolio website designed to showcase skills, projects, and accomplishments. Fully responsive and optimized for both desktop and mobile views.", 
     screenshot: "/images/portfolio.png", 
-    github: "#", 
-    tech: "HTML, CSS, JavaScript, React" 
+    github: "https://www.ashamweene.fyi/", 
+    tech: "HTML, CSS, JavaScript, React",
+    liveDemo: "https://event-tracker-live-demo.com" // Live website URL
+
   },
   { 
     title: "Interactive 3D Globe", 
@@ -39,8 +41,9 @@ const projects = [
     title: "Task Management App", 
     description: "A React Native-based task management app that helps users organize and prioritize their daily tasks with notifications and a sleek UI.", 
     screenshot: "/path/to/task.jpg", 
-    github: "#", 
-    tech: "React Native, Redux" 
+    github: "https://github.com/a-mwen/task-manager-app", 
+    tech: "React Native, Redux",
+    liveDemo: "https://task-manager-app-alpha-drab.vercel.app/" 
   },
   { 
     title: "CNN Image Classification", 
@@ -103,26 +106,26 @@ export default function Projects() {
           <h1 className="text-center text-4xl font-bold text-green mb-12">PROJECTS</h1>
 
           <div className="w-full max-w-4xl">
-            {projects.map((project, index) => (
-              <div
-                key={index}
-                className="project-item bg-gray-800 p-6 rounded-lg mb-6 flex flex-col md:flex-row items-center gap-6 hover:bg-gray-700 transition-all duration-300 cursor-pointer"
-                onClick={() => handleProjectClick(project)}
-              >
-                {/* Project Image or Screenshot */}
-                <div className="w-full md:w-1/3">
-                  <img src={project.screenshot} alt={project.title} className="w-full h-48 object-cover rounded-md" />
-                </div>
+  {projects.map((project, index) => (
+    <div
+      key={index}
+      className={`project-item bg-gray-800 p-6 rounded-lg mb-6 flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-6 hover:bg-gray-700 transition-all duration-300 cursor-pointer`}
+      onClick={() => handleProjectClick(project)}
+    >
+      {/* Project Image or Screenshot */}
+      <div className="w-full md:w-1/3">
+        <img src={project.screenshot} alt={project.title} className="w-full h-48 object-cover rounded-md" />
+      </div>
 
-                {/* Project Details */}
-                <div className="w-full md:w-2/3">
-                  <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
-                  <p className="text-sm text-gray-400 mb-2">{project.tech}</p>
-                  <p className="text-lg">{project.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+      {/* Project Details */}
+      <div className="w-full md:w-2/3">
+        <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
+        <p className="text-sm text-gray-400 mb-2">{project.tech}</p>
+        <p className="text-lg">{project.description}</p>
+      </div>
+    </div>
+  ))}
+</div>
         </div>
 
         {selectedProject && (
