@@ -6,21 +6,23 @@ import { marked } from 'marked';
 
 const categories = {
   "Software Projects": [
-    { 
-      title: "Event Tracker", 
-      description: "A web application that allows users to create, manage, and track events. Features include user authentication, event creation, and RSVP functionality.", 
-      screenshot: "/images/eventTracker.png", 
-      github: "https://github.com/a-mwen/EventTracker-project", 
+ {     title: "Task Management App",
+      description: "A full-stack task management app built with React and Node.js that helps users organize and prioritize their daily tasks. Features include adding, editing, and deleting tasks, as well as setting task status and priority.",
+      screenshot: "images/task_manager.png",
+      github: "https://github.com/a-mwen/task-manager-app",
       tech: [
-        "PHP", 
-        "JavaScript", 
-        "HTML", 
-        "CSS", 
-        "PostgreSQL", 
-        "PDO", 
-        "Chart.js"
+        "React",
+        "Axios",
+        "CSS",
+        "Node.js",
+        "Express",
+        "CORS",
+        "PostgreSQL",
+        "pg (node-postgres)",
+        "Render (Backend + Database)",
+        "Vercel (Frontend)"
       ],
-      liveDemo: "https://event-tracker-live-demo.com"
+      liveDemo: "https://task-manager-app-alpha-drab.vercel.app/"
     },
     { 
       title: "Portfolio Website", 
@@ -60,25 +62,22 @@ const categories = {
       ],
       liveDemo: "https://azure-auth-repo.vercel.app/"
     },
-      {
-        title: "Task Management App",
-        description: "A full-stack task management app built with React and Node.js that helps users organize and prioritize their daily tasks. Features include adding, editing, and deleting tasks, as well as setting task status and priority.",
-        screenshot: "images/task_manager.png",
-        github: "https://github.com/a-mwen/task-manager-app",
-        tech: [
-          "React",
-          "Axios",
-          "CSS",
-          "Node.js",
-          "Express",
-          "CORS",
-          "PostgreSQL",
-          "pg (node-postgres)",
-          "Render (Backend + Database)",
-          "Vercel (Frontend)"
-        ],
-        liveDemo: "https://task-manager-app-alpha-drab.vercel.app/"
-      },
+    { 
+      title: "Event Tracker", 
+      description: "A web application that allows users to create, manage, and track events. Features include user authentication, event creation, and RSVP functionality.", 
+      screenshot: "/images/eventTracker.png", 
+      github: "https://github.com/a-mwen/EventTracker-project", 
+      tech: [
+        "PHP", 
+        "JavaScript", 
+        "HTML", 
+        "CSS", 
+        "PostgreSQL", 
+        "PDO", 
+        "Chart.js"
+      ],
+      liveDemo: "https://event-tracker-live-demo.com"
+    },,
     { 
       title: "CNN Image Classification", 
       description: "A machine learning model that classifies images into different categories using Convolutional Neural Networks (CNN) for accuracy.", 
