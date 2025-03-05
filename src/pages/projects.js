@@ -3,6 +3,7 @@ import { gsap } from 'gsap';
 import Header from '../components/Header';
 import Cursor from '../components/cursor';
 import { marked } from 'marked';
+
 const categories = {
   "Software Projects": [
     { 
@@ -59,24 +60,25 @@ const categories = {
       ],
       liveDemo: "https://azure-auth-repo.vercel.app/"
     },
-    { 
-      title: "Task Management App", 
-      description: "A React Native-based task management app that helps users organize and prioritize their daily tasks with notifications and a sleek UI.", 
-      screenshot: "/path/to/task.jpg", 
-      github: "https://github.com/a-mwen/task-manager-app", 
-      tech: [
-        "React Native", 
-        "Redux",
-        "Axios", 
-        "CSS", 
-        "Node.js", 
-        "Express", 
-        "CORS", 
-        "PostgreSQL", 
-        "pg (node-postgres)"
-      ],
-      liveDemo: "https://task-manager-app-alpha-drab.vercel.app/"
-    },
+      {
+        title: "Task Management App",
+        description: "A full-stack task management app built with React and Node.js that helps users organize and prioritize their daily tasks. Features include adding, editing, and deleting tasks, as well as setting task status and priority.",
+        screenshot: "/images/task-manager.png",
+        github: "https://github.com/a-mwen/task-manager-app",
+        tech: [
+          "React",
+          "Axios",
+          "CSS",
+          "Node.js",
+          "Express",
+          "CORS",
+          "PostgreSQL",
+          "pg (node-postgres)",
+          "Render (Backend + Database)",
+          "Vercel (Frontend)"
+        ],
+        liveDemo: "https://task-manager-app-alpha-drab.vercel.app/"
+      },
     { 
       title: "CNN Image Classification", 
       description: "A machine learning model that classifies images into different categories using Convolutional Neural Networks (CNN) for accuracy.", 
@@ -117,7 +119,6 @@ const categories = {
   ]
 };
 
-
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
 
@@ -134,7 +135,6 @@ export default function Projects() {
       });
     });
 
-    // Animate category names on load
     gsap.fromTo(".category-title", { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.8, stagger: 0.2 });
   }, []);
 
@@ -165,9 +165,9 @@ export default function Projects() {
                     className="project-card bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-all duration-300 cursor-pointer shadow-lg w-full sm:w-1/2 md:w-1/3 lg:w-1/3 flex-shrink-0" 
                     onClick={() => handleProjectClick(project)}
                   >
-                    <img src={project.image} alt={project.title} className="w-full h-32 object-cover rounded-md mb-4" />
+                    <img src={project.screenshot} alt={project.title} className="w-full h-32 object-cover rounded-md mb-4" />
                     <h3 className="text-2xl font-bold mb-1">{project.title}</h3>
-                    <p className="text-sm text-gray-400 mb-2">{project.tech}</p>
+                    <p className="text-sm text-gray-400 mb-2">{project.tech.join(", ")}</p>
                     <p className="text-lg">{project.description}</p>
                   </div>
                 ))}
@@ -181,9 +181,14 @@ export default function Projects() {
             <div className="modal bg-white p-8 rounded-lg text-navy max-h-full w-11/12 md:w-8/12 lg:w-6/12 xl:w-4/12 relative shadow-2xl overflow-y-auto">
               <button className="absolute top-4 right-4 text-gray-700 hover:text-gray-900" onClick={closeModal}>✕</button>
               <h2 className="text-3xl font-bold mb-4">{selectedProject.title}</h2>
-              <img src={selectedProject.image} alt={selectedProject.title} className="w-full h-48 object-cover rounded-md mb-4" />
+              <img src={selectedProject.screenshot} alt={selectedProject.title} className="w-full h-48 object-cover rounded-md mb-4" />
               <p className="text-lg mb-4">{selectedProject.description}</p>
-              <p className="text-lg font-bold mb-2">Technologies Used: {selectedProject.tech}</p>
+              <p className="text-lg font-bold mb-2">Technologies Used:</p>
+              <ul className="list-disc pl-6 mb-4">
+                {selectedProject.tech.map((tech, index) => (
+                  <li key={index} className="text-lg">{tech}</li>
+                ))}
+              </ul>
               <a href={selectedProject.github} className="text-blue-400 hover:underline mb-4 block" target="_blank" rel="noopener noreferrer">GitHub Link</a>
               {selectedProject.liveDemo && (
                 <a href={selectedProject.liveDemo} className="text-blue-400 hover:underline mb-4 block" target="_blank" rel="noopener noreferrer">Live Demo</a>
@@ -192,12 +197,6 @@ export default function Projects() {
                 <div className="bg-gray-200 p-4 rounded-lg text-left mb-4">
                   <h3 className="text-xl font-bold mb-2">Detailed Description</h3>
                   <span dangerouslySetInnerHTML={{ __html: marked(selectedProject.detailedDescription) }} className="text-gray-700"></span>
-                </div>
-              )}
-              {selectedProject.screenshot && (
-                <div>
-                  <h3 className="text-xl font-bold mb-2">Screenshot</h3>
-                  <img src={selectedProject.screenshot} alt={`${selectedProject.title} Screenshot`} className="w-full h-auto rounded-md mb-4"/>
                 </div>
               )}
             </div>
