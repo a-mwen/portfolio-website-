@@ -76,7 +76,6 @@ const categories = {
         "PDO", 
         "Chart.js"
       ],
-      liveDemo: "https://event-tracker-live-demo.com"
     },,
     { 
       title: "CNN Image Classification", 
