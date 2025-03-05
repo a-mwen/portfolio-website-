@@ -60,7 +60,7 @@ const categories = {
         "MSAL.js", 
         "CSS"
       ],
-      liveDemo: "https://azure-auth-repo.vercel.app/"
+      liveDemo: "https://azure-auth-repo-git-main-ashers-projects-2cc47492.vercel.app/"
     },
     { 
       title: "Event Tracker", 
