@@ -63,7 +63,7 @@ const categories = {
       {
         title: "Task Management App",
         description: "A full-stack task management app built with React and Node.js that helps users organize and prioritize their daily tasks. Features include adding, editing, and deleting tasks, as well as setting task status and priority.",
-        screenshot: "/images/task-manager.png",
+        screenshot: "images/task_manager.png",
         github: "https://github.com/a-mwen/task-manager-app",
         tech: [
           "React",
