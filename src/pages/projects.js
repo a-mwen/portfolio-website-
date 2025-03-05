@@ -76,6 +76,7 @@ const categories = {
         "PDO", 
         "Chart.js"
       ],
+      liveDemo: "https://vimeo.com/1038020808?share=copy"
     },,
     { 
       title: "CNN Image Classification", 
