@@ -35,7 +35,7 @@ const projects = [
   { 
     title: "Task Management App", 
     description: "A React Native-based task management app that helps users organize and prioritize their daily tasks.", 
-    screenshot: "/path/to/task.jpg", 
+    screenshot: "/images/task-manager.png", 
     github: "https://github.com/a-mwen/task-manager-app", 
     tech: "React Native, Redux"
   },
