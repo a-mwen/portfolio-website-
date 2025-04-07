@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { gsap } from 'gsap';
 import Header from '../components/Header';
 import Cursor from '../components/cursor';
+import Link from 'next/link';
 
 export default function About() {
   const [activeTab, setActiveTab] = useState('professional');
@@ -49,10 +50,10 @@ export default function About() {
           
           <div className="bio-section mb-12 bg-gray-900 bg-opacity-70 p-6 rounded-lg shadow-xl">
             <p className="text-lg sm:text-xl mb-6 text-white leading-relaxed">
-              Hey there! I'm a <span className="font-bold text-green-400">soon-to-be Computer Science graduate</span> with a passion for building, optimizing, and securing digital solutions. Whether it's crafting user-friendly applications, designing scalable backend systems, or diving into cybersecurity, I love problem-solving and making tech work better for people.
+              Hey there! I&apos;m a <span className="font-bold text-green-400">soon-to-be Computer Science graduate</span> with a passion for building, optimizing, and securing digital solutions. Whether it&apos;s crafting user-friendly applications, designing scalable backend systems, or diving into cybersecurity, I love problem-solving and making tech work better for people.
             </p>
             <p className="text-lg sm:text-xl text-white leading-relaxed">
-              I'm actively looking for opportunities in <span className="font-bold text-yellow-500">Software Engineering</span>, <span className="font-bold text-blue-500">Full-Stack Development</span>, <span className="font-bold text-purple-500">Cybersecurity</span>, and <span className="font-bold text-red-500">Technical Consulting</span>. If you're looking for someone who can build robust applications, analyze data, and secure systems—I'm your person!
+              I&apos;m actively looking for opportunities in <span className="font-bold text-yellow-500">Software Engineering</span>, <span className="font-bold text-blue-500">Full-Stack Development</span>, <span className="font-bold text-purple-500">Cybersecurity</span>, and <span className="font-bold text-red-500">Technical Consulting</span>. If you&apos;re looking for someone who can build robust applications, analyze data, and secure systems—I&apos;m your person!
             </p>
           </div>
           
@@ -85,7 +86,7 @@ export default function About() {
                   <div className="mb-6">
                     <h2 className="text-2xl font-bold text-green-400 mb-3">Professional Journey</h2>
                     <p className="text-lg text-white leading-relaxed">
-                      As a computer science student with a focus on software development and cybersecurity, I've built a solid foundation in creating secure, efficient applications. I approach each project with attention to detail, focusing on both functionality and user experience.
+                      As a computer science student with a focus on software development and cybersecurity, I&apos;ve built a solid foundation in creating secure, efficient applications. I approach each project with attention to detail, focusing on both functionality and user experience.
                     </p>
                   </div>
                   
@@ -106,7 +107,7 @@ export default function About() {
                         <span className="font-bold">BS in Computer Science</span>
                       </p>
                       <p className="text-white">Point Park University, Graduating 2025</p>
-                      <p className="text-gray-400 mt-2">Dean's List, NCAA Scholar Athlete</p>
+                      <p className="text-gray-400 mt-2">Dean&apos;s List, NCAA Scholar Athlete</p>
                     </div>
                   </div>
                 </div>
@@ -197,7 +198,7 @@ export default function About() {
                   </div>
                   
                   <div className="mt-6">
-                    <h3 className="text-xl font-bold text-green-400 mb-3">Recent Technologies I've Worked With</h3>
+                    <h3 className="text-xl font-bold text-green-400 mb-3">Recent Technologies I&apos;ve Worked With</h3>
                     <div className="flex flex-wrap gap-3">
                       <span className="technology text-yellow-400 bg-gray-800 p-2 rounded-xl">JavaScript</span>
                       <span className="technology text-blue-400 bg-gray-800 p-2 rounded-xl">TypeScript</span>
@@ -221,14 +222,14 @@ export default function About() {
                   <div className="mb-6">
                     <h2 className="text-2xl font-bold text-green-400 mb-3">Beyond The Code</h2>
                     <p className="text-lg text-white leading-relaxed">
-                      Beyond tech, I have a strong competitive spirit—both in problem-solving and on the field. As a <span className="font-bold text-green-400">college athlete</span>, I've learned discipline, teamwork, and adaptability, which I bring into my development work.
+                      Beyond tech, I have a strong competitive spirit—both in problem-solving and on the field. As a <span className="font-bold text-green-400">college athlete</span>, I&apos;ve learned discipline, teamwork, and adaptability, which I bring into my development work.
                     </p>
                   </div>
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="bg-gray-800 p-5 rounded-lg">
                       <h3 className="text-xl font-bold text-yellow-400 mb-3">Athletic Achievements</h3>
-                      <p className="text-white mb-3">Point Park Women's Soccer - 2021 to Present</p>
+                      <p className="text-white mb-3">Point Park Women&apos;s Soccer - 2021 to Present</p>
                       <ul className="list-disc list-inside space-y-2 text-white">
                         <li>NCAA Division II Scholar</li>
                         <li>Awarded Conference Scholar-Athlete</li>
@@ -239,7 +240,7 @@ export default function About() {
                     <div className="bg-gray-800 p-5 rounded-lg">
                       <h3 className="text-xl font-bold text-blue-400 mb-3">Community Involvement</h3>
                       <ul className="list-disc list-inside space-y-2 text-white">
-                        <li>Consistently on the Dean's List for academic excellence</li>
+                        <li>Consistently on the Dean&apos;s List for academic excellence</li>
                         <li>Member of Rewrite the Code & ColorStack, advocating for diversity in tech</li>
                         <li>Mentor for aspiring developers in university programs</li>
                       </ul>
@@ -249,7 +250,7 @@ export default function About() {
                   <div className="mt-4">
                     <h3 className="text-xl font-bold text-green-400 mb-3">What Drives Me</h3>
                     <p className="text-lg text-white leading-relaxed">
-                      I'm passionate about creating technology that makes a difference. Whether it's building intuitive user interfaces, optimizing backend systems for performance, or implementing robust security measures, I believe in developing solutions that genuinely help people and organizations.
+                      I&apos;m passionate about creating technology that makes a difference. Whether it&apos;s building intuitive user interfaces, optimizing backend systems for performance, or implementing robust security measures, I believe in developing solutions that genuinely help people and organizations.
                     </p>
                   </div>
                 </div>
@@ -258,17 +259,21 @@ export default function About() {
           </div>
           
           <div className="cta-section text-center bg-gray-900 bg-opacity-70 p-6 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold text-green-400 mb-4">Let's Connect!</h2>
+            <h2 className="text-2xl font-bold text-green-400 mb-4">Let&apos;s Connect!</h2>
             <p className="text-lg text-white mb-6">
-              I'm excited to connect with companies and teams that value innovation, security, and impactful solutions. Let's build something great together!
+              I&apos;m excited to connect with companies and teams that value innovation, security, and impactful solutions. Let&apos;s build something great together!
             </p>
             <div className="flex justify-center space-x-4">
-              <a href="/contact" className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full transition-all transform hover:scale-105">
-                Contact Me
-              </a>
-              <a href="/projects" className="bg-transparent hover:bg-white text-white hover:text-navy font-bold py-2 px-6 rounded-full border-2 border-white transition-all transform hover:scale-105">
-                View My Projects
-              </a>
+              <Link href="/contact">
+                <a className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full transition-all transform hover:scale-105">
+                  Contact Me
+                </a>
+              </Link>
+              <Link href="/projects">
+                <a className="bg-transparent hover:bg-white text-white hover:text-navy font-bold py-2 px-6 rounded-full border-2 border-white transition-all transform hover:scale-105">
+                  View My Projects
+                </a>
+              </Link>
             </div>
           </div>
         </div>
