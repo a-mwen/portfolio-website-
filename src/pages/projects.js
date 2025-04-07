@@ -5,7 +5,7 @@ import Cursor from '../components/cursor';
 import { marked } from 'marked';
 
 const categories = {
-  "Software Projects": [
+  "Web Applications": [
     {
       title: "Task Management App",
       description: "A full-stack task management application with drag-and-drop functionality, supporting task creation, editing, and prioritization.",
@@ -76,53 +76,6 @@ const categories = {
 `
     },
     { 
-      title: "Interactive 3D Globe", 
-      description: "A WebGL-based interactive globe visualizing global data points in real-time.", 
-      screenshot: "https://static.turbosquid.com/Preview/2015/09/01__08_03_12/8k.jpgcc32babc-700f-4e83-a4c7-34c6ccb97a9fOriginal.jpg", 
-      github: "https://github.com/a-mwen/interactive-globe-project", 
-      tech: [
-        "JavaScript", 
-        "WebGL", 
-        "Three.js"
-      ], 
-      liveDemo: "https://interactive-globe-project-2j6lozqyy-ashers-projects-2cc47492.vercel.app/",
-      detailedDescription: `
-### Project Overview
-- Created an interactive 3D globe visualization using advanced WebGL techniques
-- Implemented real-time data rendering and user interaction
-- Demonstrated proficiency in 3D graphics programming
-
-### Technical Challenges
-- Developed complex WebGL rendering techniques
-- Implemented smooth user interactions with 3D object
-- Optimized performance for complex graphical rendering
-`
-    },
-    { 
-      title: "Azure AD B2C Authentication App", 
-      description: "Secure authentication application using Microsoft's cloud-based identity management service.", 
-      screenshot: "/images/azure-ad-b2c.png", 
-      github: "https://github.com/a-mwen/azure-auth-repo", 
-      tech: [
-        "React", 
-        "Azure AD B2C", 
-        "MSAL.js", 
-        "CSS"
-      ],
-      liveDemo: "https://azure-auth-repo-git-main-ashers-projects-2cc47492.vercel.app/",
-      detailedDescription: `
-### Authentication Features
-- Implemented secure Microsoft account authentication
-- Utilized OAuth 2.0 authentication protocol
-- Created robust user authentication flow
-
-### Technical Implementation
-- Integrated Azure AD B2C with React frontend
-- Implemented secure token management
-- Created seamless login/logout experience
-`
-    },
-    { 
       title: "Portfolio Website", 
       description: "A personal portfolio website showcasing skills, projects, and professional achievements with responsive design.", 
       screenshot: "/images/portfolio.png", 
@@ -153,7 +106,130 @@ const categories = {
 - Accessibility-focused design
 - Performance-optimized rendering
 `
+    }
+  ],
+  "Progressive Web Apps & Mobile": [
+    { 
+      title: "Color Palette Generator PWA", 
+      description: "A professional color palette generator built as a Progressive Web App with offline functionality and installable capabilities.", 
+      screenshot: "/images/color-palette-pwa.png", 
+      github: "https://github.com/a-mwen/color-palette-generator-pwa", 
+      tech: [
+        "HTML5", 
+        "CSS3", 
+        "JavaScript", 
+        "PWA", 
+        "Service Workers",
+        "Azure DevOps"
+      ],
+      liveDemo: "https://gray-island-01a1d8e10.4.azurestaticapps.net/",
+      detailedDescription: `
+### Key Features
+- **Multiple Palette Types**: Generate random, monochromatic, analogous, or complementary color schemes
+- **Color Information**: View color codes in HEX, RGB, and HSL formats
+- **One-Click Copying**: Copy color codes to your clipboard with a single click
+- **Palette History**: Access your recently generated color palettes
+- **Offline Support**: Works even without an internet connection
+- **Installable**: Add to your home screen as a standalone application
+
+### Technical Highlights
+- Implemented Progressive Web App capabilities
+- Created service worker for offline functionality
+- Used local storage for persistent palette history
+- Deployed using Azure DevOps CI/CD pipeline
+- Implemented responsive design for all device sizes
+
+### Development Process
+- Designed interface focused on usability and aesthetics
+- Implemented color theory algorithms for palette generation
+- Created PWA manifest for installable experience
+- Configured GitHub and Azure DevOps integration for streamlined deployment
+`
     },
+    { 
+      title: "Azure AD B2C Authentication App", 
+      description: "Secure authentication application using Microsoft's cloud-based identity management service.", 
+      screenshot: "/images/azure-ad-b2c.png", 
+      github: "https://github.com/a-mwen/azure-auth-repo", 
+      tech: [
+        "React", 
+        "Azure AD B2C", 
+        "MSAL.js", 
+        "CSS"
+      ],
+      liveDemo: "https://azure-auth-repo-git-main-ashers-projects-2cc47492.vercel.app/",
+      detailedDescription: `
+### Authentication Features
+- Implemented secure Microsoft account authentication
+- Utilized OAuth 2.0 authentication protocol
+- Created robust user authentication flow
+
+### Technical Implementation
+- Integrated Azure AD B2C with React frontend
+- Implemented secure token management
+- Created seamless login/logout experience
+`
+    }
+  ],
+  "Cloud & DevOps": [
+    { 
+      title: "Azure Node.js Deployment Project", 
+      description: "A project demonstrating automated deployment of a Node.js application to Azure using GitHub Actions for CI/CD.", 
+      screenshot: "/images/azure-node-deployment.png", 
+      github: "https://github.com/a-mwen/azure-node-app", 
+      tech: [
+        "Node.js", 
+        "Azure Web App", 
+        "GitHub Actions", 
+        "Azure CLI",
+        "CI/CD Pipeline"
+      ],
+      liveDemo: null,
+      detailedDescription: `
+### Project Overview
+This project demonstrates how to deploy a Node.js application to Azure using **GitHub Actions** for CI/CD. The project is automatically built and deployed to an Azure Web App every time changes are pushed to the \`main\` branch.
+
+### Technical Features
+- **CI/CD Pipeline**: Automated build and deployment process using GitHub Actions
+- **Live Deployment**: The application is hosted on Azure, making it accessible via the web
+- **DevOps Workflow**: Demonstrates modern DevOps practices for application deployment
+- **Infrastructure as Code**: Configuration managed through version control
+
+### Development Process
+- Set up Node.js application and tested locally
+- Created GitHub Actions workflow for CI/CD pipeline
+- Configured Azure Web App for hosting
+- Implemented automated testing before deployment
+- Set up continuous deployment from GitHub to Azure
+`
+    }
+  ],
+  "Data & Visualization": [
+    { 
+      title: "Interactive 3D Globe", 
+      description: "A WebGL-based interactive globe visualizing global data points in real-time.", 
+      screenshot: "https://static.turbosquid.com/Preview/2015/09/01__08_03_12/8k.jpgcc32babc-700f-4e83-a4c7-34c6ccb97a9fOriginal.jpg", 
+      github: "https://github.com/a-mwen/interactive-globe-project", 
+      tech: [
+        "JavaScript", 
+        "WebGL", 
+        "Three.js"
+      ], 
+      liveDemo: "https://interactive-globe-project-2j6lozqyy-ashers-projects-2cc47492.vercel.app/",
+      detailedDescription: `
+### Project Overview
+- Created an interactive 3D globe visualization using advanced WebGL techniques
+- Implemented real-time data rendering and user interaction
+- Demonstrated proficiency in 3D graphics programming
+
+### Technical Challenges
+- Developed complex WebGL rendering techniques
+- Implemented smooth user interactions with 3D object
+- Optimized performance for complex graphical rendering
+`
+    }
+  ],
+  "Artificial Intelligence": [
     { 
       title: "Machine Learning Image Classifier", 
       description: "Convolutional Neural Network for accurate image classification.", 
