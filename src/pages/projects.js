@@ -112,7 +112,7 @@ const categories = {
     { 
       title: "Color Palette Generator PWA", 
       description: "A professional color palette generator built as a Progressive Web App with offline functionality and installable capabilities.", 
-      screenshot: "/images/color-palette-pwa.png", 
+      screenshot: "/images/spectrum.png", 
       github: "https://github.com/a-mwen/color-palette-generator-pwa", 
       tech: [
         "HTML5", 
@@ -122,7 +122,7 @@ const categories = {
         "Service Workers",
         "Azure DevOps"
       ],
-      liveDemo: "https://gray-island-01a1d8e10.4.azurestaticapps.net/",
+      liveDemo: "https://proud-river-0e464db1e-preview.westus2.6.azurestaticapps.net/",
       detailedDescription: `
 ### Key Features
 - **Multiple Palette Types**: Generate random, monochromatic, analogous, or complementary color schemes
