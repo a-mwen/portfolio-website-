@@ -13,10 +13,10 @@ export default function Resume() {
           <p className="text-lg sm:text-xl mb-4">You can view or download my resume below. If you have any questions or opportunities, please feel free to reach out!</p>
           
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8">
-            <a href="/docs/Asha Mweene Resume-Current.pdf" download className="bg-blue-500 text-navy px-6 py-2 rounded-md transition duration-300 ease-in-out transform hover:scale-105 hover:bg-blue-700">Download Resume</a>
-            <a href="/docs/Asha Mweene Resume-Current.pdf" target="_blank" rel="noopener noreferrer" className="bg-green text-navy px-6 py-2 rounded-md transition duration-300 ease-in-out transform hover:scale-105 hover:bg-green-700">View Resume</a>
+            <a href="/public/docs/Asha_Mweene_resume.pdf" download className="bg-blue-500 text-navy px-6 py-2 rounded-md transition duration-300 ease-in-out transform hover:scale-105 hover:bg-blue-700">Download Resume</a>
+            <a href="/public/docs/Asha_Mweene_resume.pdf" target="_blank" rel="noopener noreferrer" className="bg-green text-navy px-6 py-2 rounded-md transition duration-300 ease-in-out transform hover:scale-105 hover:bg-green-700">View Resume</a>
           </div>
-          <iframe src="/docs/Asha Mweene Resume-Current.pdf" className="w-full h-96 mb-8 shadow-lg rounded-md" title="Resume" />
+          <iframe src="/public/docs/Asha_Mweene_resume.pdf" className="w-full h-96 mb-8 shadow-lg rounded-md" title="Resume" />
         </div>
 
         {/* Animated Shapes */}
