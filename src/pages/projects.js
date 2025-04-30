@@ -8,250 +8,207 @@ const categories = {
   "Web Applications": [
     {
       title: "Task Management App",
-      description: "A full-stack task management application with drag-and-drop functionality, supporting task creation, editing, and prioritization.",
+      description: "Drag-and-drop task management with prioritization and responsive design, ideal for remote teams.",
       screenshot: "images/task_manager.png",
       github: "https://github.com/a-mwen/task-manager-app",
       tech: [
-        "React",
-        "Node.js",
-        "Express",
-        "PostgreSQL",
-        "Material-UI",
-        "Framer Motion",
-        "React Beautiful DnD"
+        "React", "Node.js", "Express", "PostgreSQL", "Material-UI", "Framer Motion", "React Beautiful DnD"
       ],
       liveDemo: "https://task-manager-app-alpha-drab.vercel.app/",
       detailedDescription: `
-### Key Features
-- **Dynamic Task Management**: Add, edit, and delete tasks with ease
-- **Drag-and-Drop Reordering**: Intuitive task organization
-- **Priority Levels**: Color-coded priority system (Low, Medium, High)
-- **Responsive Design**: Seamless experience across devices
+### What It Does
+A task planner for managing workflows, prioritizing work, and collaborating visually.
 
-### Technical Highlights
-- Implemented full-stack application with React frontend and Node.js/Express backend
-- Utilized PostgreSQL for robust data persistence
-- Integrated Material-UI for sleek, modern design
-- Employed Framer Motion for smooth animations
-- Implemented React Beautiful DnD for interactive task reordering
+### Technical Stack
+- Full-stack architecture with React frontend and Express backend
+- PostgreSQL for persistent data storage
+- Styled with Material-UI, animations via Framer Motion
 
-### Challenges Overcome
-- Developed complex state management for real-time task updates
-- Created responsive design that works across multiple device sizes
-- Implemented efficient backend routes for CRUD operations
+### Impact
+- Built for performance and ease-of-use across devices
+- Solves real-time task updates and visual task sorting
+
+### Role Relevance
+Great for showcasing full-stack and UI/UX design skills
 `
     },
-    { 
-      title: "Event Tracker", 
-      description: "A web application for creating, managing, and tracking events with user authentication and RSVP functionality.", 
-      screenshot: "/images/eventTracker.png", 
-      github: "https://github.com/a-mwen/EventTracker-project", 
+    {
+      title: "Event Tracker",
+      description: "Manage and visualize event RSVPs with login, database logic, and real-time stats.",
+      screenshot: "/images/eventTracker.png",
+      github: "https://github.com/a-mwen/EventTracker-project",
       tech: [
-        "PHP", 
-        "JavaScript", 
-        "HTML", 
-        "CSS", 
-        "PostgreSQL", 
-        "PDO", 
-        "Chart.js"
+        "PHP", "JavaScript", "HTML", "CSS", "PostgreSQL", "PDO", "Chart.js"
       ],
       liveDemo: "https://vimeo.com/1038020808?share=copy",
       detailedDescription: `
-### Project Features
-- User authentication and authorization
-- Event creation and management
-- RSVP tracking and participation analytics
-- Data visualization with Chart.js
+### What It Does
+Users can log in, create events, and track attendance with visual insights.
 
-### Technical Highlights
-- Implemented full-stack web application using PHP
-- Created robust database interactions with PDO
-- Developed interactive user interfaces
-- Integrated data visualization for event insights
+### Technical Stack
+- PHP with PDO for backend
+- Chart.js for visual RSVP tracking
+- Auth system with session handling
 
-### Challenges Overcome
-- Implemented secure user authentication
-- Created complex database relationships
-- Developed responsive and interactive UI
+### Role Relevance
+Good for backend-heavy or data-centric developer roles
 `
     },
-    { 
-      title: "Portfolio Website", 
-      description: "A personal portfolio website showcasing skills, projects, and professional achievements with responsive design.", 
-      screenshot: "/images/portfolio.png", 
-      github: "https://www.github.com/a-mwen/portfolio", 
+    {
+      title: "Portfolio Website",
+      description: "Interactive developer portfolio built with React, GSAP animations, and Tailwind for modern responsive design.",
+      screenshot: "/images/portfolio.png",
+      github: "https://www.github.com/a-mwen/portfolio",
       tech: [
-        "React",
-        "Tailwind CSS", 
-        "GSAP", 
-        "Responsive Design",
-        "Modern Web Technologies"
+        "React", "Tailwind CSS", "GSAP", "Responsive Design"
       ],
       liveDemo: "https://www.ashamweene.fyi/",
       detailedDescription: `
-### Key Features
-- Responsive and interactive portfolio design
-- Animated user interface with GSAP
-- Comprehensive project showcase
-- Modern, clean aesthetic
+### What It Does
+A sleek developer portfolio that showcases skills, design sense, and personal brand.
 
-### Technical Implementation
-- Utilized React for component-based architecture
-- Implemented Tailwind CSS for responsive styling
-- Created smooth animations and interactions
-- Demonstrated front-end development best practices
+### Technical Stack
+- React and Tailwind for responsive layout
+- GSAP for smooth animations
+- Optimized for accessibility and performance
 
-### Design Considerations
-- Mobile-first approach
-- Accessibility-focused design
-- Performance-optimized rendering
+### Role Relevance
+Great for front-end and UI-focused positions
 `
     }
   ],
   "Progressive Web Apps & Mobile": [
-    { 
-      title: "Color Palette Generator PWA", 
-      description: "A professional color palette generator built as a Progressive Web App with offline functionality and installable capabilities.", 
-      screenshot: "/images/spectrum.png", 
-      github: "https://github.com/a-mwen/color-palette-generator-pwa", 
+    {
+      title: "Color Palette Generator PWA",
+      description: "Offline-first, installable color palette generator app with copy-to-clipboard and palette history features.",
+      screenshot: "/images/spectrum.png",
+      github: "https://github.com/a-mwen/color-palette-generator-pwa",
       tech: [
-        "HTML5", 
-        "CSS3", 
-        "JavaScript", 
-        "PWA", 
-        "Service Workers",
-        "Azure DevOps"
+        "HTML5", "CSS3", "JavaScript", "PWA", "Service Workers", "Azure DevOps"
       ],
       liveDemo: "https://proud-river-0e464db1e-preview.westus2.6.azurestaticapps.net/",
       detailedDescription: `
-### Key Features
-- **Multiple Palette Types**: Generate random, monochromatic, analogous, or complementary color schemes
-- **Color Information**: View color codes in HEX, RGB, and HSL formats
-- **One-Click Copying**: Copy color codes to your clipboard with a single click
-- **Palette History**: Access your recently generated color palettes
-- **Offline Support**: Works even without an internet connection
-- **Installable**: Add to your home screen as a standalone application
+### What It Does
+Designers and devs can generate, store, and copy color palettes across multiple schemes.
 
-### Technical Highlights
-- Implemented Progressive Web App capabilities
-- Created service worker for offline functionality
-- Used local storage for persistent palette history
-- Deployed using Azure DevOps CI/CD pipeline
-- Implemented responsive design for all device sizes
+### Technical Stack
+- Vanilla JS + PWA + Azure DevOps CI/CD
+- Local storage for offline support
 
-### Development Process
-- Designed interface focused on usability and aesthetics
-- Implemented color theory algorithms for palette generation
-- Created PWA manifest for installable experience
-- Configured GitHub and Azure DevOps integration for streamlined deployment
+### Role Relevance
+Strong for UI dev, PWA/mobile-first devs
 `
     },
-    { 
-      title: "Azure AD B2C Authentication App", 
-      description: "Secure authentication application using Microsoft's cloud-based identity management service.", 
-      screenshot: "/images/azure-ad-b2c.png", 
-      github: "https://github.com/a-mwen/azure-auth-repo", 
+    {
+      title: "Azure AD B2C Authentication App",
+      description: "OAuth-based secure login system built with Microsoft's cloud-based identity platform.",
+      screenshot: "/images/azure-ad-b2c.png",
+      github: "https://github.com/a-mwen/azure-auth-repo",
       tech: [
-        "React", 
-        "Azure AD B2C", 
-        "MSAL.js", 
-        "CSS"
+        "React", "Azure AD B2C", "MSAL.js", "CSS"
       ],
       liveDemo: "https://azure-auth-repo-git-main-ashers-projects-2cc47492.vercel.app/",
       detailedDescription: `
-### Authentication Features
-- Implemented secure Microsoft account authentication
-- Utilized OAuth 2.0 authentication protocol
-- Created robust user authentication flow
+### What It Does
+Secure app login using Microsoft authentication with OAuth 2.0 protocol.
 
-### Technical Implementation
-- Integrated Azure AD B2C with React frontend
-- Implemented secure token management
-- Created seamless login/logout experience
+### Technical Stack
+- React with Azure AD B2C
+- Token handling via MSAL.js
+
+### Role Relevance
+Cloud, security, and identity-focused projects
 `
     }
   ],
   "Cloud & DevOps": [
-    { 
-      title: "Azure Node.js Deployment Project", 
-      description: "A project demonstrating automated deployment of a Node.js application to Azure using GitHub Actions for CI/CD.", 
-      screenshot: "/images/azure-node-deployment.png", 
-      github: "https://github.com/a-mwen/azure-node-app", 
+    {
+      title: "Azure Node.js Deployment Project",
+      description: "CI/CD pipeline deployment of Node.js app to Azure using GitHub Actions.",
+      screenshot: "/images/azure-node-deployment.png",
+      github: "https://github.com/a-mwen/azure-node-app",
       tech: [
-        "Node.js", 
-        "Azure Web App", 
-        "GitHub Actions", 
-        "Azure CLI",
-        "CI/CD Pipeline"
+        "Node.js", "Azure Web App", "GitHub Actions", "Azure CLI", "CI/CD Pipeline"
       ],
       liveDemo: null,
       detailedDescription: `
-### Project Overview
-This project demonstrates how to deploy a Node.js application to Azure using **GitHub Actions** for CI/CD. The project is automatically built and deployed to an Azure Web App every time changes are pushed to the \`main\` branch.
+### What It Does
+Demonstrates auto-deploy from GitHub to Azure via GitHub Actions.
 
-### Technical Features
-- **CI/CD Pipeline**: Automated build and deployment process using GitHub Actions
-- **Live Deployment**: The application is hosted on Azure, making it accessible via the web
-- **DevOps Workflow**: Demonstrates modern DevOps practices for application deployment
-- **Infrastructure as Code**: Configuration managed through version control
+### Technical Stack
+- Node backend, deployed on Azure
+- GitHub Actions for CI/CD
 
-### Development Process
-- Set up Node.js application and tested locally
-- Created GitHub Actions workflow for CI/CD pipeline
-- Configured Azure Web App for hosting
-- Implemented automated testing before deployment
-- Set up continuous deployment from GitHub to Azure
+### Role Relevance
+Perfect for DevOps, Cloud Engineering candidates
 `
     }
   ],
   "Data & Visualization": [
-    { 
-      title: "Interactive 3D Globe", 
-      description: "A WebGL-based interactive globe visualizing global data points in real-time.", 
-      screenshot: "https://static.turbosquid.com/Preview/2015/09/01__08_03_12/8k.jpgcc32babc-700f-4e83-a4c7-34c6ccb97a9fOriginal.jpg", 
-      github: "https://github.com/a-mwen/interactive-globe-project", 
+    {
+      title: "Interactive 3D Globe",
+      description: "WebGL globe that displays global data points with smooth camera and data interactions.",
+      screenshot: "https://static.turbosquid.com/Preview/2015/09/01__08_03_12/8k.jpgcc32babc-700f-4e83-a4c7-34c6ccb97a9fOriginal.jpg",
+      github: "https://github.com/a-mwen/interactive-globe-project",
       tech: [
-        "JavaScript", 
-        "WebGL", 
-        "Three.js"
-      ], 
+        "JavaScript", "WebGL", "Three.js"
+      ],
       liveDemo: "https://interactive-globe-project-2j6lozqyy-ashers-projects-2cc47492.vercel.app/",
       detailedDescription: `
-### Project Overview
-- Created an interactive 3D globe visualization using advanced WebGL techniques
-- Implemented real-time data rendering and user interaction
-- Demonstrated proficiency in 3D graphics programming
+### What It Does
+3D globe app for rendering data across countries in real-time.
 
-### Technical Challenges
-- Developed complex WebGL rendering techniques
-- Implemented smooth user interactions with 3D object
-- Optimized performance for complex graphical rendering
+### Tech Stack
+- Three.js + WebGL for 3D visuals
+- Real-time data plotting
+
+### Role Relevance
+Strong for front-end engineers focused on data viz or interaction design
+`
+    },
+    {
+      title: "CardTrack: Trading Card Marketplace & Analytics",
+      description: "A web platform for trading card enthusiasts to buy, sell, and analyze card values using real-time data.",
+      screenshot: "/images/cardtrack.png", // make sure to update this image path
+      github: "https://github.com/a-mwen/CardTrack-Marketplace",
+      tech: [
+        "JavaScript", "Node.js", "Express", "MySQL", "Chart.js", "Bootstrap"
+      ],
+      liveDemo: "https://cardtrack.vercel.app",
+      detailedDescription: `
+### What It Does
+Users can post, browse, and analyze card listings. Includes price trends, rarity filters, and analytics dashboard.
+
+### Technical Stack
+- Backend in Node.js + MySQL
+- Chart.js for market analytics
+- Frontend built with Bootstrap & custom JS
+
+### Role Relevance
+Excellent for full-stack and data roles
 `
     }
   ],
   "Artificial Intelligence": [
-    { 
-      title: "Machine Learning Image Classifier", 
-      description: "Convolutional Neural Network for accurate image classification.", 
-      screenshot: "https://media.geeksforgeeks.org/wp-content/uploads/20230215093923/CNN-Architectures-1.png", 
-      github: "https://github.com/a-mwen/-image-classification", 
+    {
+      title: "Machine Learning Image Classifier",
+      description: "Convolutional neural network built with TensorFlow and Keras for accurate image classification.",
+      screenshot: "https://media.geeksforgeeks.org/wp-content/uploads/20230215093923/CNN-Architectures-1.png",
+      github: "https://github.com/a-mwen/-image-classification",
       tech: [
-        "Python", 
-        "TensorFlow", 
-        "Keras",
-        "Machine Learning"
+        "Python", "TensorFlow", "Keras", "Machine Learning"
       ],
       liveDemo: null,
       detailedDescription: `
-### Machine Learning Achievements
-- Developed CNN model for precise image classification
-- Implemented advanced deep learning techniques
-- Demonstrated proficiency in machine learning algorithms
+### What It Does
+Classifies images using deep learning with high accuracy.
 
-### Technical Depth
-- Used TensorFlow and Keras for model development
-- Implemented data preprocessing and augmentation
-- Achieved high accuracy through sophisticated neural network architecture
+### Technical Stack
+- CNN built in TensorFlow and Keras
+- Model training, validation, and evaluation
+
+### Role Relevance
+Great for AI/ML engineering or data science
 `
     }
   ]
@@ -300,7 +257,7 @@ export default function Projects() {
                 {categories[category].map((project, index) => (
                   <div
                     key={index}
-                    className="project-card bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-all duration-300 cursor-pointer shadow-lg w-full sm:w-1/2 md:w-1/3 lg:w-1/3 flex-shrink-0" 
+                    className="project-card bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-all duration-300 cursor-pointer shadow-lg w-full sm:w-1/2 md:w-1/3 lg:w-1/3 flex-shrink-0"
                     onClick={() => handleProjectClick(project)}
                   >
                     <img src={project.screenshot} alt={project.title} className="w-full h-32 object-cover rounded-md mb-4" />
@@ -341,7 +298,7 @@ export default function Projects() {
           </div>
         )}
 
-        {/* Animated Shapes in Background */}
+        {/* Background Shapes */}
         <div className="shape shape-one w-40 h-40 bg-green-500 opacity-40 rounded-full absolute top-0 right-10 filter blur-lg"></div>
         <div className="shape shape-two w-52 h-52 bg-purple-500 opacity-40 rounded-full absolute bottom-0 left-10 filter blur-lg"></div>
         <div className="shape shape-three w-44 h-44 bg-yellow-500 opacity-40 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 filter blur-lg"></div>
