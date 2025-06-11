@@ -50,10 +50,10 @@ export default function About() {
           
           <div className="bio-section mb-12 bg-gray-900 bg-opacity-70 p-6 rounded-lg shadow-xl">
             <p className="text-lg sm:text-xl mb-6 text-white leading-relaxed">
-              Hey there! I&apos;m a <span className="font-bold text-green-400">soon-to-be Computer Science graduate</span> with a passion for building, optimizing, and securing digital solutions. Whether it&apos;s crafting user-friendly applications, designing scalable backend systems, or diving into cybersecurity, I love problem-solving and making tech work better for people.
+              Hey there! I&apos;m a <span className="font-bold text-green-400">Computer Science graduate</span> with a passion for building, optimizing, and securing digital solutions. Whether it&apos;s crafting user-friendly applications, designing scalable backend systems, or diving into AI/ML technologies, I love problem-solving and making tech work better for people.
             </p>
             <p className="text-lg sm:text-xl text-white leading-relaxed">
-              I&apos;m actively looking for opportunities in <span className="font-bold text-yellow-500">Software Engineering</span>, <span className="font-bold text-blue-500">Full-Stack Development</span>, <span className="font-bold text-purple-500">Cybersecurity</span>, and <span className="font-bold text-red-500">Technical Consulting</span>. If you&apos;re looking for someone who can build robust applications, analyze data, and secure systems—I&apos;m your person!
+              I&apos;m actively seeking opportunities in <span className="font-bold text-yellow-500">Software Engineering</span>, <span className="font-bold text-blue-500">Full-Stack Development</span>, <span className="font-bold text-purple-500">AI/ML Engineering</span>, <span className="font-bold text-red-500">Cloud Engineering</span>, and <span className="font-bold text-green-500">Technical Consulting</span>. If you&apos;re looking for someone who can build robust applications, implement intelligent systems, and deliver scalable solutions—I&apos;m your person!
             </p>
           </div>
           
@@ -86,28 +86,47 @@ export default function About() {
                   <div className="mb-6">
                     <h2 className="text-2xl font-bold text-green-400 mb-3">Professional Journey</h2>
                     <p className="text-lg text-white leading-relaxed">
-                      As a computer science student with a focus on software development and cybersecurity, I&apos;ve built a solid foundation in creating secure, efficient applications. I approach each project with attention to detail, focusing on both functionality and user experience.
+                      As a recent Computer Science graduate with hands-on experience in software development, AI/ML, and cloud technologies, I&apos;ve built a comprehensive foundation in creating secure, efficient, and intelligent applications. I approach each project with attention to detail, focusing on both technical excellence and real-world impact.
                     </p>
                   </div>
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="bg-gray-800 p-5 rounded-lg">
-                      <h3 className="text-xl font-bold text-yellow-400 mb-2">Areas of Interest</h3>
+                      <h3 className="text-xl font-bold text-yellow-400 mb-2">Core Expertise</h3>
                       <ul className="list-disc list-inside space-y-2 text-white">
-                        <li>Full-Stack Development</li>
-                        <li>Security Engineering</li>
-                        <li>Cloud Architecture</li>
-                        <li>Technical Consulting</li>
+                        <li>Full-Stack Development (React, Node.js)</li>
+                        <li>AI/ML Engineering (Python, NLP, TensorFlow)</li>
+                        <li>Cloud Architecture (Azure, CI/CD)</li>
+                        <li>Database Design & Management</li>
+                        <li>Technical Problem Solving</li>
                       </ul>
                     </div>
                     
                     <div className="bg-gray-800 p-5 rounded-lg">
-                      <h3 className="text-xl font-bold text-blue-400 mb-2">Education</h3>
+                      <h3 className="text-xl font-bold text-blue-400 mb-2">Education & Achievements</h3>
                       <p className="text-white mb-2">
                         <span className="font-bold">BS in Computer Science</span>
                       </p>
-                      <p className="text-white">Point Park University, Graduating 2025</p>
-                      <p className="text-gray-400 mt-2">Dean&apos;s List, NCAA Scholar Athlete</p>
+                      <p className="text-white mb-2">Point Park University, 2025</p>
+                      <p className="text-gray-400">
+                        • Consistent Dean&apos;s List honoree<br/>
+                        • NCAA Scholar Athlete<br/>
+                        • Chi Alpha Sigma Honor Society
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-gray-800 p-5 rounded-lg">
+                    <h3 className="text-xl font-bold text-purple-400 mb-3">Recent Projects & Impact</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div>
+                        <h4 className="font-bold text-green-400">AI Resume Screener</h4>
+                        <p className="text-gray-300 text-sm">Built an NLP-powered system achieving 90%+ accuracy in job category prediction</p>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-blue-400">Azure CI/CD Pipeline</h4>
+                        <p className="text-gray-300 text-sm">Implemented automated deployment workflows for enterprise-level applications</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -145,27 +164,27 @@ export default function About() {
                     </div>
                     
                     <div className="bg-gray-800 p-5 rounded-lg">
-                      <h3 className="text-xl font-bold text-blue-400 mb-3">Backend</h3>
+                      <h3 className="text-xl font-bold text-blue-400 mb-3">Backend & AI/ML</h3>
                       <ul className="space-y-2">
                         <li className="flex items-center">
                           <div className="w-2 h-2 bg-blue-400 rounded-full mr-2"></div>
-                          <span>Node.js</span>
+                          <span>Python (TensorFlow, NLTK)</span>
                         </li>
                         <li className="flex items-center">
                           <div className="w-2 h-2 bg-blue-400 rounded-full mr-2"></div>
-                          <span>Express</span>
+                          <span>Node.js/Express</span>
                         </li>
                         <li className="flex items-center">
                           <div className="w-2 h-2 bg-blue-400 rounded-full mr-2"></div>
-                          <span>Python</span>
-                        </li>
-                        <li className="flex items-center">
-                          <div className="w-2 h-2 bg-blue-400 rounded-full mr-2"></div>
-                          <span>PHP</span>
+                          <span>Flask/Streamlit</span>
                         </li>
                         <li className="flex items-center">
                           <div className="w-2 h-2 bg-blue-400 rounded-full mr-2"></div>
                           <span>RESTful APIs</span>
+                        </li>
+                        <li className="flex items-center">
+                          <div className="w-2 h-2 bg-blue-400 rounded-full mr-2"></div>
+                          <span>Machine Learning</span>
                         </li>
                       </ul>
                     </div>
@@ -183,11 +202,11 @@ export default function About() {
                         </li>
                         <li className="flex items-center">
                           <div className="w-2 h-2 bg-purple-400 rounded-full mr-2"></div>
-                          <span>Firebase</span>
+                          <span>Azure Cloud Services</span>
                         </li>
                         <li className="flex items-center">
                           <div className="w-2 h-2 bg-purple-400 rounded-full mr-2"></div>
-                          <span>Azure</span>
+                          <span>GitHub Actions CI/CD</span>
                         </li>
                         <li className="flex items-center">
                           <div className="w-2 h-2 bg-purple-400 rounded-full mr-2"></div>
@@ -205,13 +224,15 @@ export default function About() {
                       <span className="technology text-green-400 bg-gray-800 p-2 rounded-xl">Node.js</span>
                       <span className="technology text-purple-400 bg-gray-800 p-2 rounded-xl">React.js</span>
                       <span className="technology text-gray-300 bg-gray-800 p-2 rounded-xl">Next.js</span>
-                      <span className="technology text-blue-500 bg-gray-800 p-2 rounded-xl">Firebase</span>
+                      <span className="technology text-red-400 bg-gray-800 p-2 rounded-xl">Python</span>
+                      <span className="technology text-orange-400 bg-gray-800 p-2 rounded-xl">TensorFlow</span>
+                      <span className="technology text-pink-400 bg-gray-800 p-2 rounded-xl">NLTK</span>
+                      <span className="technology text-blue-500 bg-gray-800 p-2 rounded-xl">Streamlit</span>
+                      <span className="technology text-green-500 bg-gray-800 p-2 rounded-xl">Flask</span>
                       <span className="technology text-red-500 bg-gray-800 p-2 rounded-xl">SQL</span>
-                      <span className="technology text-orange-500 bg-gray-800 p-2 rounded-xl">MongoDB</span>
-                      <span className="technology text-blue-300 bg-gray-800 p-2 rounded-xl">Python</span>
-                      <span className="technology text-green-500 bg-gray-800 p-2 rounded-xl">Azure AD B2C</span>
-                      <span className="technology text-pink-400 bg-gray-800 p-2 rounded-xl">PWA</span>
+                      <span className="technology text-blue-300 bg-gray-800 p-2 rounded-xl">Azure</span>
                       <span className="technology text-indigo-400 bg-gray-800 p-2 rounded-xl">GitHub Actions</span>
+                      <span className="technology text-cyan-400 bg-gray-800 p-2 rounded-xl">PWA</span>
                     </div>
                   </div>
                 </div>
@@ -222,27 +243,29 @@ export default function About() {
                   <div className="mb-6">
                     <h2 className="text-2xl font-bold text-green-400 mb-3">Beyond The Code</h2>
                     <p className="text-lg text-white leading-relaxed">
-                      Beyond tech, I have a strong competitive spirit—both in problem-solving and on the field. As a <span className="font-bold text-green-400">college athlete</span>, I&apos;ve learned discipline, teamwork, and adaptability, which I bring into my development work.
+                      Beyond tech, I have a strong competitive spirit—both in problem-solving and on the field. As a <span className="font-bold text-green-400">former college athlete</span>, I&apos;ve developed discipline, teamwork, and adaptability skills that I bring into my development work and professional collaborations.
                     </p>
                   </div>
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="bg-gray-800 p-5 rounded-lg">
-                      <h3 className="text-xl font-bold text-yellow-400 mb-3">Athletic Achievements</h3>
-                      <p className="text-white mb-3">Point Park Women&apos;s Soccer - 2021 to Present</p>
+                      <h3 className="text-xl font-bold text-yellow-400 mb-3">Athletic Background</h3>
+                      <p className="text-white mb-3">Point Park Women&apos;s Soccer (2021-2025)</p>
                       <ul className="list-disc list-inside space-y-2 text-white">
-                        <li>NCAA Division II Scholar</li>
-                        <li>Awarded Conference Scholar-Athlete</li>
+                        <li>NCAA Division II Scholar-Athlete</li>
+                        <li>Conference Scholar-Athlete Award</li>
                         <li>Chi Alpha Sigma Honor Society Member</li>
+                        <li>Consistent Dean&apos;s List recognition</li>
                       </ul>
                     </div>
                     
                     <div className="bg-gray-800 p-5 rounded-lg">
-                      <h3 className="text-xl font-bold text-blue-400 mb-3">Community Involvement</h3>
+                      <h3 className="text-xl font-bold text-blue-400 mb-3">Community & Leadership</h3>
                       <ul className="list-disc list-inside space-y-2 text-white">
-                        <li>Consistently on the Dean&apos;s List for academic excellence</li>
-                        <li>Member of Rewrite the Code & ColorStack, advocating for diversity in tech</li>
-                        <li>Mentor for aspiring developers in university programs</li>
+                        <li>Active member of Rewrite the Code & ColorStack</li>
+                        <li>Advocate for diversity and inclusion in tech</li>
+                        <li>Mentor for aspiring developers</li>
+                        <li>Volunteer in university tech outreach programs</li>
                       </ul>
                     </div>
                   </div>
@@ -250,7 +273,14 @@ export default function About() {
                   <div className="mt-4">
                     <h3 className="text-xl font-bold text-green-400 mb-3">What Drives Me</h3>
                     <p className="text-lg text-white leading-relaxed">
-                      I&apos;m passionate about creating technology that makes a difference. Whether it&apos;s building intuitive user interfaces, optimizing backend systems for performance, or implementing robust security measures, I believe in developing solutions that genuinely help people and organizations.
+                      I&apos;m passionate about creating technology that makes a difference. Whether it&apos;s building intuitive user interfaces, developing AI systems that solve real problems, or implementing robust backend architectures, I believe in developing solutions that genuinely help people and organizations thrive in an increasingly digital world.
+                    </p>
+                  </div>
+                  
+                  <div className="bg-gray-800 p-5 rounded-lg">
+                    <h3 className="text-xl font-bold text-purple-400 mb-3">Career Goals</h3>
+                    <p className="text-white leading-relaxed">
+                      I&apos;m excited to join a forward-thinking team where I can contribute to innovative projects, continue learning cutting-edge technologies, and grow as both a developer and team member. I&apos;m particularly interested in roles that combine technical challenges with meaningful impact.
                     </p>
                   </div>
                 </div>
@@ -259,9 +289,9 @@ export default function About() {
           </div>
           
           <div className="cta-section text-center bg-gray-900 bg-opacity-70 p-6 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold text-green-400 mb-4">Let&apos;s Connect!</h2>
+            <h2 className="text-2xl font-bold text-green-400 mb-4">Ready to Make an Impact!</h2>
             <p className="text-lg text-white mb-6">
-              I&apos;m excited to connect with companies and teams that value innovation, security, and impactful solutions. Let&apos;s build something great together!
+              I&apos;m excited to connect with companies and teams that value innovation, technical excellence, and meaningful solutions. Let&apos;s build something great together!
             </p>
             <div className="flex justify-center space-x-4">
               <Link href="/contact">
